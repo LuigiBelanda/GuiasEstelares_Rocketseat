@@ -1,0 +1,41 @@
+<!--
+
+    Aninhamento de tags
+
+    - Fluxo
+    - Hierarquia
+    - Posicionamento dos elementos
+
+-->
+
+<!-- tags aninhadas da maneira correta -->
+<p>
+    Vou <em>escrever</em> um parágrafo
+</p>
+
+<!-- tags não aninhadas -->
+<p>
+    Vou <em>escrever um parágrafo
+</p> ainda se eu tivesse texto aqui </em> 
+
+<!-- Hierarquia (tag "div" é o pai, "p" é uma tag filha de "div" e "em" é uma tag filha de "p") -->
+<div>
+    <p>
+        Vou <em>escrever</em> um parágrafo
+    </p>
+</div>
+
+<!-- Fluxo (o conteúdo é lido conforme a ordem que estão escritos) -->
+<p>
+    Vou <em>escrever</em> um parágrafo
+</p>
+
+<p>
+    Esse é um novo parágrafo
+</p>
+
+<!-- Posicionamento (algumas tags vão ficar entre as linhas de texto, outras vão quebrar essas linhas) -->
+<p>
+    Esse é um <em>texto</em>
+    <p>Aqui é outro texto </p>
+</p>
